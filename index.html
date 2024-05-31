@@ -10,29 +10,47 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://i.imgur.com/T7BlByS.png');
+            background-image: url('https://i.imgur.com/ooftgv6.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            color: #fff; /* Letra clara */
+            color: #fff;
         }
         header {
-            background-color: rgba(128, 0, 128, 0.8);
+            background-color: rgba(128, 0, 128, 0.9);
             color: white;
             text-align: center;
             padding: 1em 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         section {
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin-top: 20px;
-            color: #333; /* Cor do texto no fundo branco */
+            border-radius: 8px;
+            color: #333;
         }
-        h1 {
+        h1, h2 {
             margin-top: 0;
+            text-align: center;
+        }
+        h2.section-title {
+            color: #800080;
+            border-bottom: 2px solid #800080;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f2f2f2;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
         }
         .contact-button {
             display: block;
@@ -45,16 +63,15 @@
             text-decoration: none;
             border-radius: 5px;
             font-size: 18px;
+            transition: background-color 0.3s;
         }
         .contact-button:hover {
             background-color: #800080;
         }
-        .section-title {
-            color: #800080;
-        }
         .contact-info a {
             color: #9932CC;
             text-decoration: none;
+            transition: text-decoration 0.3s;
         }
         .contact-info a:hover {
             text-decoration: underline;
@@ -67,6 +84,26 @@
                 width: 100%;
                 margin: 10px 0;
             }
+        }
+        .price-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .price-item {
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            flex: 0 1 45%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .price-item h3 {
+            margin-top: 0;
+            color: #800080;
+        }
+        .price-item p {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -92,6 +129,35 @@
         </ul>
     </section>
     <section>
+        <h2 class="section-title">Valores</h2>
+        <div class="price-list">
+            <div class="price-item">
+                <h3>Quiropraxia</h3>
+                <p>R$150 por sessão</p>
+            </div>
+            <div class="price-item">
+                <h3>Drenagem</h3>
+                <p>R$120 por sessão</p>
+            </div>
+            <div class="price-item">
+                <h3>Reflexologia</h3>
+                <p>R$100 por sessão</p>
+            </div>
+            <div class="price-item">
+                <h3>Shiatsu</h3>
+                <p>R$130 por sessão</p>
+            </div>
+            <div class="price-item">
+                <h3>Drenagem Pós-Cirurgia</h3>
+                <p>R$140 por sessão</p>
+            </div>
+            <div class="price-item">
+                <h3>Relaxamento Total</h3>
+                <p>R$110 por sessão</p>
+            </div>
+        </div>
+    </section>
+    <section>
         <h2 class="section-title">Blog</h2>
         <p>Atualmente não utilizo o blog, mas em breve estarei publicando conteúdos interessantes sobre massoterapia e bem-estar.</p>
     </section>
@@ -106,3 +172,4 @@
     </section>
 </body>
 </html>
+
