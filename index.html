@@ -7,83 +7,89 @@
     <meta name="description" content="Neuza Prado, massoterapeuta especializada em diversas técnicas de massagem para seu bem-estar. Entre em contato e agende sua sessão.">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://i.imgur.com/ooftgv6.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: #fff;
-        }
-        header {
-            background-color: rgba(128, 0, 128, 0.9);
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-top: 20px;
-            border-radius: 8px;
+            background-color: #FAF3E0; /* Background bege claro */
             color: #333;
         }
-        h1, h2 {
-            margin-top: 0;
+        header {
+            background-color: #D2B48C; /* Cor bege */
+            color: #333;
             text-align: center;
+            padding: 1em 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h2.section-title {
-            color: #800080;
-            border-bottom: 2px solid #800080;
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .intro img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .services, .portfolio, .blog, .contact {
+            background-color: #FFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .section-title {
+            color: #800080; /* Roxo */
+            border-bottom: 2px solid #800080; /* Roxo */
             padding-bottom: 10px;
+            margin-bottom: 20px;
         }
-        ul {
-            list-style-type: none;
+        .services ul, .portfolio ul {
+            list-style: none;
             padding: 0;
         }
-        li {
-            background-color: #f2f2f2;
-            margin: 5px 0;
-            padding: 10px;
+        .services li, .portfolio li {
+            background-color: #FAF3E0;
             border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .services li h3, .portfolio li h3 {
+            margin: 0;
+            color: #800080; /* Roxo */
         }
         .contact-button {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: #9932CC;
-            color: white;
-            text-align: center;
-            text-decoration: none;
+            display: inline-block;
+            background-color: #800080; /* Roxo */
+            color: #FFF;
+            padding: 10px 20px;
             border-radius: 5px;
-            font-size: 18px;
+            text-decoration: none;
             transition: background-color 0.3s;
         }
         .contact-button:hover {
-            background-color: #800080;
+            background-color: #9932CC; /* Roxo claro */
         }
         .contact-info a {
-            color: #9932CC;
+            color: #800080; /* Roxo */
             text-decoration: none;
-            transition: text-decoration 0.3s;
         }
         .contact-info a:hover {
             text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            section {
-                padding: 10px;
-            }
-            .contact-button {
-                width: 100%;
-                margin: 10px 0;
-            }
         }
         .price-list {
             display: flex;
@@ -91,19 +97,22 @@
             justify-content: space-around;
         }
         .price-item {
-            background-color: #f2f2f2;
+            background-color: #FAF3E0;
             border-radius: 5px;
-            padding: 10px;
+            padding: 20px;
             margin: 10px;
             flex: 0 1 45%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .price-item h3 {
             margin-top: 0;
-            color: #800080;
+            color: #800080; /* Roxo */
         }
-        .price-item p {
-            margin: 5px 0;
+        @media (max-width: 768px) {
+            .price-item {
+                flex: 0 1 100%;
+            }
         }
     </style>
 </head>
@@ -111,65 +120,80 @@
     <header>
         <h1>Neuza Prado</h1>
     </header>
-    <section>
-        <h2 class="section-title">Biografia</h2>
-        <p>Eu estudei massoterapia sobre massagem de vários cursos e fiz na faculdade espírita. Desde os meus 22 anos até os 26 anos, eu estudei muito sobre massagem e depois fui trabalhando de massagista em vários lugares até chegar aqui em meu consultório, e estou aqui até hoje com esse meu dom desenvolvido por várias técnicas que aplico atualmente.</p>
-    </section>
-    <section>
-        <h2 class="section-title">Portfólio</h2>
-        <p>Minhas técnicas são:</p>
-        <ul>
-            <li>Quiropraxia</li>
-            <li>Drenagem</li>
-            <li>Reflexologia (técnica aplicada de massagem nos pés)</li>
-            <li>Shiatsu (aplicações na coluna e em lugares do corpo para melhorar as dores)</li>
-            <li>Drenagem pós-cirurgia (para retirada de líquidos do corpo, como pernas inchadas)</li>
-            <li>Quiropraxia (técnica aplicada para resolver dores, torcicolo, ciático e problemas na coluna)</li>
-            <li>Técnicas para relaxar cabeça, ombros, quadris, braços e pernas</li>
-        </ul>
-    </section>
-    <section>
-        <h2 class="section-title">Valores</h2>
-        <div class="price-list">
-            <div class="price-item">
-                <h3>Quiropraxia</h3>
-                <p>R$150 por sessão</p>
-            </div>
-            <div class="price-item">
-                <h3>Drenagem</h3>
-                <p>R$120 por sessão</p>
-            </div>
-            <div class="price-item">
-                <h3>Reflexologia</h3>
-                <p>R$100 por sessão</p>
-            </div>
-            <div class="price-item">
-                <h3>Shiatsu</h3>
-                <p>R$130 por sessão</p>
-            </div>
-            <div class="price-item">
-                <h3>Drenagem Pós-Cirurgia</h3>
-                <p>R$140 por sessão</p>
-            </div>
-            <div class="price-item">
-                <h3>Relaxamento Total</h3>
-                <p>R$110 por sessão</p>
-            </div>
+    <div class="container">
+        <div class="intro">
+            <img src="https://i.imgur.com/ooftgv6.jpg" alt="Neuza Prado">
+            <h1>Bem-vindo</h1>
+            <p>Especialista em técnicas de massoterapia para seu bem-estar.</p>
         </div>
-    </section>
-    <section>
-        <h2 class="section-title">Blog</h2>
-        <p>Atualmente não utilizo o blog, mas em breve estarei publicando conteúdos interessantes sobre massoterapia e bem-estar.</p>
-    </section>
-    <section>
-        <h2 class="section-title">Contato</h2>
-        <p>Se você quiser entrar em contato, clique no botão abaixo para me enviar uma mensagem no WhatsApp ou me encontre nas redes sociais.</p>
-        <a class="contact-button" href="https://wa.me/5541999290184" target="_blank">Fale comigo no WhatsApp</a>
-        <div class="contact-info">
-            <p>Facebook: <a href="https://www.facebook.com/neuza.braga.94" target="_blank">Neuza Prado</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/neuzamassa?igsh=aGJvYWFhaW0zcHpp" target="_blank">@neuzamassa</a></p>
-        </div>
-    </section>
+        <section class="services">
+            <h2 class="section-title">Portfólio</h2>
+            <ul>
+                <li>
+                    <h3>Quiropraxia</h3>
+                </li>
+                <li>
+                    <h3>Drenagem</h3>
+                </li>
+                <li>
+                    <h3>Reflexologia (técnica aplicada de massagem nos pés)</h3>
+                </li>
+                <li>
+                    <h3>Shiatsu (aplicações na coluna e em lugares do corpo para melhorar as dores)</h3>
+                </li>
+                <li>
+                    <h3>Drenagem pós-cirurgia (para retirada de líquidos do corpo, como pernas inchadas)</h3>
+                </li>
+                <li>
+                    <h3>Técnicas para relaxar cabeça, ombros, quadris, braços e pernas</h3>
+                </li>
+            </ul>
+        </section>
+        <section class="portfolio">
+            <h2 class="section-title">Valores</h2>
+            <div class="price-list">
+                <div class="price-item">
+                    <h3>Quiropraxia</h3>
+                    <p>R$150 por sessão</p>
+                </div>
+                <div class="price-item">
+                    <h3>Drenagem</h3>
+                    <p>R$120 por sessão</p>
+                </div>
+                <div class="price-item">
+                    <h3>Reflexologia</h3>
+                    <p>R$100 por sessão</p>
+                </div>
+                <div class="price-item">
+                    <h3>Shiatsu</h3>
+                    <p>R$130 por sessão</p>
+                </div>
+                <div class="price-item">
+                    <h3>Drenagem Pós-Cirurgia</h3>
+                    <p>R$140 por sessão</p>
+                </div>
+                <div class="price-item">
+                    <h3>Relaxamento Total</h3>
+                    <p>R$110 por sessão</p>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <h2 class="section-title">Blog</h2>
+            <p>Atualmente não utilizo o blog, mas em breve estarei publicando conteúdos interessantes sobre massoterapia e bem-estar.</p>
+        </section>
+        <section class="contact">
+            <h2 class="section-title">Contato</h2>
+            <p>Se você quiser entrar em contato, clique no botão abaixo para me enviar uma mensagem no WhatsApp ou me encontre nas redes sociais.</p>
+            <a class="contact-button" href="https://wa.me/5541999290184" target="_blank">Fale comigo no WhatsApp</a>
+            <div class="contact-info">
+                <p>Facebook: <a href="https://www.facebook.com/neuza.braga.94" target="_blank">Neuza Prado</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/neuzamassa?igsh=aGJvYWFhaW0zcHpp" target="_blank">@neuzamassa</a></p>
+            </div>
+        </section>
+    </div>
 </body>
+</html>
+
 </html>
 
