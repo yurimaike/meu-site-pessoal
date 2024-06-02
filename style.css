@@ -1,110 +1,123 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuza Prado - Massoterapeuta</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Neuza Prado</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                </ul>
-                <div class="language-switcher">
-                    <button class="btn btn-outline-primary" onclick="switchLanguage('pt')">PT</button>
-                    <button class="btn btn-outline-secondary" onclick="switchLanguage('en')">EN</button>
-                </div>
-            </div>
-        </div>
-    </header>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FAF3E0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #D2B48C;
+    padding: 10px 0;
+}
+header .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #800080;
+}
+.hero {
+    position: relative;
+    background-image: url('https://i.imgur.com/ooftgv6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.hero p {
+    font-size: 1.5em;
+}
+.hero .btn {
+    margin: 20px 10px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+.language-switcher {
+    margin-left: 10px;
+}
+.services, .portfolio, .blog, .contact {
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+.section-title {
+    color: #800080;
+    border-bottom: 2px solid #800080;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.price-list {
+    display: flex;
+    flex-wrap:### JavaScript (`script.js`)
+To handle language switching dynamically, create a JavaScript file (`script.js`) that maps text elements to their translations and updates the page content based on the selected language.
 
-    <section class="hero text-center text-white d-flex align-items-center justify-content-center">
-        <div>
-            <h1 data-lang="hero-title">Os Melhores Tratamentos</h1>
-            <p data-lang="hero-subtitle">Neuza Prado, Massoterapeuta</p>
-            <a href="#services" class="btn btn-primary" data-lang="hero-btn1">Saiba Mais</a>
-            <a href="#contact" class="btn btn-secondary" data-lang="hero-btn2">Agende Sua Sessão</a>
-        </div>
-    </section>
+```javascript
+const translations = {
+    "pt": {
+        "hero-title": "Os Melhores Tratamentos",
+        "hero-subtitle": "Neuza Prado, Massoterapeuta",
+        "hero-btn1": "Saiba Mais",
+        "hero-btn2": "Agende Sua Sessão",
+        "services-title": "Serviços",
+        "service1": "Quiropraxia",
+        "service2": "Drenagem",
+        "service3": "Reflexologia",
+        "portfolio-title": "Portfólio",
+        "portfolio-desc": "Veja algumas das técnicas que utilizo:",
+        "portfolio-item1": "Quiropraxia",
+        "portfolio-item2": "Drenagem",
+        "portfolio-item3": "Reflexologia",
+        "portfolio-item4": "Shiatsu",
+        "portfolio-item5": "Drenagem pós-cirurgia",
+        "portfolio-item6": "Relaxamento Total",
+        "blog-title": "Blog",
+        "blog-desc": "Atualmente não utilizo o blog, mas em breve estarei publicando conteúdos interessantes sobre massoterapia e bem-estar.",
+        "contact-title": "Contato",
+        "contact-desc": "Se você quiser entrar em contato, clique no botão abaixo para me enviar uma mensagem no WhatsApp ou me encontre nas redes sociais.",
+        "contact-btn": "Fale comigo no WhatsApp",
+        "contact-hours": "Horários de atendimento: 8h às 22h (agende conforme disponibilidade)",
+        "contact-address": "Endereço: Rua da Lua 311, Sitio Cercado, Curitiba"
+    },
+    "en": {
+        "hero-title": "The Best Treatments",
+        "hero-subtitle": "Neuza Prado, Massage Therapist",
+        "hero-btn1": "Learn More",
+        "hero-btn2": "Book Your Session",
+        "services-title": "Services",
+        "service1": "Chiropractic",
+        "service2": "Lymphatic Drainage",
+        "service3": "Reflexology",
+        "portfolio-title": "Portfolio",
+        "portfolio-desc": "See some of the techniques I use:",
+        "portfolio-item1": "Chiropractic",
+        "portfolio-item2": "Lymphatic Drainage",
+        "portfolio-item3": "Reflexology",
+        "portfolio-item4": "Shiatsu",
+        "portfolio-item5": "Post-Surgery Drainage",
+        "portfolio-item6": "Total Relaxation",
+        "blog-title": "Blog",
+        "blog-desc": "Currently not using the blog, but soon I will be posting interesting content about massage therapy and well-being.",
+        "contact-title": "Contact",
+        "contact-desc": "If you want to get in touch, click the button below to send me a message on WhatsApp or find me on social media.",
+        "contact-btn": "Talk to me on WhatsApp",
+        "contact-hours": "Service hours: 8am to 10pm (schedule according to availability)",
+        "contact-address": "Address: Rua da Lua 311, Sitio Cercado, Curitiba"
+    }
+};
 
-    <div class="container">
-        <section id="services" class="my-5">
-            <h2 class="text-center text-primary" data-lang="services-title">Serviços</h2>
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title" data-lang="service1">Quiropraxia</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title" data-lang="service2">Drenagem</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title" data-lang="service3">Reflexologia</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="my-5">
-            <h2 class="text-center text-primary" data-lang="portfolio-title">Portfólio</h2>
-            <p data-lang="portfolio-desc">Veja algumas das técnicas que utilizo:</p>
-            <ul>
-                <li data-lang="portfolio-item1">Quiropraxia</li>
-                <li data-lang="portfolio-item2">Drenagem</li>
-                <li data-lang="portfolio-item3">Reflexologia</li>
-                <li data-lang="portfolio-item4">Shiatsu</li>
-                <li data-lang="portfolio-item5">Drenagem pós-cirurgia</li>
-                <li data-lang="portfolio-item6">Relaxamento Total</li>
-            </ul>
-        </section>
-
-        <section id="blog" class="my-5">
-            <h2 class="text-center text-primary" data-lang="blog-title">Blog</h2>
-            <p data-lang="blog-desc">Atualmente não utilizo o blog, mas em breve estarei publicando conteúdos interessantes sobre massoterapia e bem-estar.</p>
-        </section>
-
-        <section id="contact" class="my-5">
-            <h2 class="text-center text-primary" data-lang="contact-title">Contato</h2>
-            <p class="text-center" data-lang="contact-desc">Se você quiser entrar em contato, clique no botão abaixo para me enviar uma mensagem no WhatsApp ou me encontre nas redes sociais.</p>
-            <div class="text-center">
-                <a class="btn btn-primary" href="https://wa.me/5541999290184" target="_blank" data-lang="contact-btn">Fale comigo no WhatsApp</a>
-            </div>
-            <p class="text-center mt-3" data-lang="contact-hours">Horários de atendimento: 8h às 22h (agende conforme disponibilidade)</p>
-            <div class="text-center">
-                <p>Facebook: <a href="https://www.facebook.com/neuza.braga.94" target="_blank">Neuza Prado</a></p>
-                <p>Instagram: <a href="https://www.instagram.com/neuzamassa" target="_blank">@neuzamassa</a></p>
-                <p data-lang="contact-address">Endereço: Rua da Lua 311, Sitio Cercado, Curitiba</p>
-            </div>
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.510891373245!2d-46.658188984482674!3d-23.564432867716204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f8b70d9f%3A0x4a38d7f5e117c7f5!2sRua+da+Lua%2C+311+-+Sitio+Cercado%2C+Curitiba+-+PR%2C+Brazil!5e0!3m2!1sen!2sus!4v1625551996129!5m2!1sen!2sus" 
-                    frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </section>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+function switchLanguage(language) {
+    const elements = document.querySelectorAll('[data-lang]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-lang');
+        element.textContent = translations[language][key];
+    });
+}
