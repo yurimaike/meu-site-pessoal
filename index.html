@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuza Prado - Massoterapeuta</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">Neuza Prado</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,85 +15,74 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                 </ul>
-                <div class="language-switcher">
-                    <button class="btn btn-outline-primary" onclick="switchLanguage('pt')">PT</button>
-                    <button class="btn btn-outline-secondary" onclick="switchLanguage('en')">EN</button>
-                </div>
             </div>
         </div>
     </header>
-
-    <section class="hero text-center text-white d-flex align-items-center justify-content-center">
+    <section class="hero">
         <div>
-            <h1 data-lang="hero-title">Os Melhores Tratamentos</h1>
-            <p data-lang="hero-subtitle">Neuza Prado, Massoterapeuta</p>
-            <a href="#services" class="btn btn-primary" data-lang="hero-btn1">Saiba Mais</a>
-            <a href="#contact" class="btn btn-secondary" data-lang="hero-btn2">Agende Sua Sessão</a>
+            <h1>Os Melhores Tratamentos</h1>
+            <p>Neuza Prado, Massoterapeuta</p>
+            <a href="#services" class="btn btn-primary">Saiba Mais</a>
+            <a href="#contact" class="btn btn-secondary">Agende Sua Sessão</a>
         </div>
     </section>
-
     <div class="container">
-        <section id="services" class="my-5">
-            <h2 class="text-center text-primary" data-lang="services-title">Serviços</h2>
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title" data-lang="service1">Quiropraxia</h3>
-                        </div>
-                    </div>
+        <section id="services" class="services">
+            <h2 class="section-title">Serviços</h2>
+            <div class="price-list">
+                <div class="price-item">
+                    <h3>Quiropraxia</h3>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title" data-lang="service2">Drenagem</h3>
-                        </div>
-                    </div>
+                <div class="price-item">
+                    <h3>Drenagem</h3>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title" data-lang="service3">Reflexologia</h3>
-                        </div>
-                    </div>
+                <div class="price-item">
+                    <h3>Reflexologia</h3>
+                </div>
+                <div class="price-item">
+                    <h3>Shiatsu</h3>
+                </div>
+                <div class="price-item">
+                    <h3>Drenagem Pós-Cirurgia</h3>
+                </div>
+                <div class="price-item">
+                    <h3>Relaxamento Total</h3>
                 </div>
             </div>
         </section>
-
-        <section id="portfolio" class="my-5">
-            <h2 class="text-center text-primary" data-lang="portfolio-title">Portfólio</h2>
-            <p data-lang="portfolio-desc">Veja algumas das técnicas que utilizo:</p>
+        <section id="portfolio" class="portfolio">
+            <h2 class="section-title">Portfólio</h2>
+            <p>Veja algumas das técnicas que utilizo:</p>
             <ul>
-                <li data-lang="portfolio-item1">Quiropraxia</li>
-                <li data-lang="portfolio-item2">Drenagem</li>
-                <li data-lang="portfolio-item3">Reflexologia</li>
-                <li data-lang="portfolio-item4">Shiatsu</li>
-                <li data-lang="portfolio-item5">Drenagem pós-cirurgia</li>
-                <li data-lang="portfolio-item6">Relaxamento Total</li>
+                <li>Quiropraxia</li>
+                <li>Drenagem</li>
+                <li>Reflexologia (técnica aplicada de massagem nos pés)</li>
+                <li>Shiatsu (aplicações na coluna e em lugares do corpo para melhorar as dores)</li>
+                <li>Drenagem pós-cirurgia (para retirada de líquidos do corpo, como pernas inchadas)</li>
+                <li>Técnicas para relaxar cabeça, ombros, quadris, braços e pernas</li>
             </ul>
         </section>
-
-        <section id="blog" class="my-5">
-            <h2 class="text-center text-primary" data-lang="blog-title">Blog</h2>
-            <p data-lang="blog-desc">Atualmente não utilizo o blog, mas em breve estarei publicando conteúdos interessantes sobre massoterapia e bem-estar.</p>
+        <section id="blog" class="blog">
+            <h2 class="section-title">Blog</h2>
+            <p>Atualmente não utilizo o blog, mas em breve estarei publicando conteúdos interessantes sobre massoterapia e bem-estar.</p>
         </section>
-
-        <section id="contact" class="my-5">
-            <h2 class="text-center text-primary" data-lang="contact-title">Contato</h2>
-            <p class="text-center" data-lang="contact-desc">Se você quiser entrar em contato, clique no botão abaixo para me enviar uma mensagem no WhatsApp ou me encontre nas redes sociais.</p>
-            <div class="text-center">
-                <a class="btn btn-primary" href="https://wa.me/5541999290184" target="_blank" data-lang="contact-btn">Fale comigo no WhatsApp</a>
-            </div>
-            <p class="text-center mt-3" data-lang="contact-hours">Horários de atendimento: 8h às 22h (agende conforme disponibilidade)</p>
-            <div class="text-center">
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contato</h2>
+            <p>Se você quiser entrar em contato, clique no botão abaixo para me enviar uma mensagem no WhatsApp ou me encontre nas redes sociais.</p>
+            <a class="btn btn-primary contact-button" href="https://wa.me/5541999290184" target="_blank">Fale comigo no WhatsApp</a>
+            <p>Horários de atendimento: 8h às 22h (agende conforme disponibilidade)</p>
+            <div class="contact-info">
                 <p>Facebook: <a href="https://www.facebook.com/neuza.braga.94" target="_blank">Neuza Prado</a></p>
-                <p>Instagram: <a href="https://www.instagram.com/neuzamassa" target="_blank">@neuzamassa</a></p>
-                <p data-lang="contact-address">Endereço: Rua da Lua 311, Sitio Cercado, Curitiba</p>
+                <p>Instagram: <a href="https://www.instagram.com/neuzamassa?ig_shid=3hzit6zkjzp5" target="_blank">@neuzamassa</a></p>
+                <p>Endereço: Rua da Lua 311</p>
+                <p>Bairro: Sitio Cercado</p>
+                <p>Cidade: Curitiba</p>
             </div>
             <div class="map-container">
                 <iframe 
@@ -103,8 +91,6 @@
             </div>
         </section>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
